@@ -10,7 +10,7 @@ const clipboardEl = document.getElementById("clipboard")
 const randomFunc = {
   lower: getRandomLower,
   upper: getRandomUpper,
-  number: getRandomNmber,
+  number: getRandomNumber,
   symbol: getRandomSymbol
 }
 
@@ -75,7 +75,7 @@ function getRandomUpper() {
   return String.fromCharCode(Math.floor(Math.random() * 26 ) + 65)
 }
 
-function getRandomNmber() {
+function getRandomNumber() {
   return String.fromCharCode(Math.floor(Math.random() * 10 ) + 48)
 }
 
