@@ -10,6 +10,7 @@
       name="description"
       content="Generate strong and random passwords for your accounts that are bruteforce proof!"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -23,14 +24,11 @@
 
       <div class="result-container">
         <span id="result"></span>
-        <button class="btn" id="clipboard">
-          <i class="far fa-clipboard" title="Copy to Clipboard"></i>
-        </button>
       </div>
 
       <div class="settings">
         <div class="setting">
-          <label>Password Length</label>
+          <label>Password Length <small>(6-26)</small></label>
           <input type="number" id="length" min="6" max="26" value="14" />
         </div>
         <div class="setting">
@@ -51,10 +49,18 @@
         </div>
       </div>
 
-      <button class="btn btn-large" id="generate">Generate Password</button>
+      <div class="actions">
+        <button class="btn" id="generate">
+          <i class="fas fa-key"></i> Generate Password
+        </button>
+        <button class="btn" id="clipboard">
+          <i class="far fa-clipboard"></i> Copy
+        </button>
+      </div>
     </div>
 
     <div id="toasts"></div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
