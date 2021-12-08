@@ -8,8 +8,8 @@
   --main: #daddfc;
   --secondary: #274463;
   --text: #fff;
-  --container-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-    0 10px 10px rgba(0, 0, 0, 0.22);
+  --container-shadow: inset 0 14px 28px rgba(0, 0, 0, 0.137),
+    inset 0 10px 10px rgba(0, 0, 0, 0.075);
   --results-container-bg: rgba(0, 0, 0, 0.4);
 }
 
@@ -57,17 +57,7 @@ h2 {
 
 .result-container #result {
   word-wrap: break-word;
-  max-width: calc(100% - 40px);
-}
-
-.result-container .btn {
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-  border-radius: 10px;
+  max-width: 100%;
 }
 
 .btn {
@@ -77,12 +67,8 @@ h2 {
   font-size: 16px;
   padding: 8px 12px;
   cursor: pointer;
-}
-
-.btn-large {
-  display: block;
-  width: 100%;
   border-radius: 5px;
+  margin: 3px;
 }
 
 .setting {
@@ -90,6 +76,16 @@ h2 {
   justify-content: space-between;
   align-items: center;
   margin: 15px 0;
+}
+
+label {
+  user-select: none;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 input[type="checkbox"] {
